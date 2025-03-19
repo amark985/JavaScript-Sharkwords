@@ -54,7 +54,7 @@ function generateLetterButtons() {
 //
 // `buttonEl` is an `HTMLElement` object.
 //
-function disableLetterButton(buttonEl) {
+function disableLetterButton(buttonE1) {
   buttonEl.disabled = true;
 }
 
