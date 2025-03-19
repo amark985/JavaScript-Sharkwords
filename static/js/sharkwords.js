@@ -31,13 +31,23 @@ const word = 'hello';
 // `<div class="letter-box ${letter}"></div>`
 //
 function createDivsForChars() {
-  // Replace this with your code
+  // word-container; letter-buttons;
+
+  const wordContainer = document.querySelector('#word-container');
+  
+  for (const letter of word){
+    wordContainer.insertAdjacentHTML('beforeend', `<div class="letter-box ${letter}"></div>`)
+  }
 }
 
 // Loop over each letter in the alphabet and generate a button for each letter
 // The buttons should be appended to the section with id="letter-buttons".
 function generateLetterButtons() {
-  // Replace this with your code
+  const alpaButtonContainer = document.querySelector('letter-buttons');
+  
+  for (const alpha of ALPHABET) {
+    alphaButtonContainer.insertAdjacentHTML('beforeend', `<button>${alpha}</button>`);
+  }
 }
 
 // Set the `disabled` property of `buttonEl` to true.
@@ -45,7 +55,7 @@ function generateLetterButtons() {
 // `buttonEl` is an `HTMLElement` object.
 //
 function disableLetterButton(buttonEl) {
-  // Replace this with your code
+  buttonEl.disabled = true;
 }
 
 // This is a helper function we will use in the future
